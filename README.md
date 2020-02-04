@@ -53,19 +53,19 @@ OpenProject, Jenkins 사용 방법 : [nginx-vhost_php7.3_openproject_jenkins_doc
 Tizen-Builder 구축 방법 
 
 ```sh
-docker-compose up -d
+현재 테스트 중 / 2020.02.05 업데이트 예정
 ```
 
 Jenkins와 Tizen-Builder 연동 방법
 
 ```sh
-docker-compose up -d
+현재 테스트 중 / 2020.02.05 업데이트 예정
 ```
 
 Tizen 이미지 관리 솔루션 연동 방법
 
 ```sh
-docker-compose up -d
+현재 테스트 중 / 2020.02.05 업데이트 예정
 ```
 
 
