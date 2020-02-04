@@ -5,8 +5,8 @@
 
 ## 통합된 솔루션
 
-> nginx/php7.3 가상 호스팅, proxy 기능
->  - Tizen 이미지 관리 솔루션
+> nginx/php7.3 가상 호스팅, proxy 솔루션
+>  - Tizen 이미지 관리 솔루션 지원
 
 > OpenProject 프로젝트 관리 솔루션
 
@@ -14,9 +14,9 @@
 
 > Tizen 빌드 솔루션
 
-* 통합 예정 솔루션
-> git server
+> * 통합 예정 솔루션
 
+> git server
 > docker-image server
 
 * DB는 데이터의 안정성을 위해 Docker로 제공하지 않으며 따로 설치하여 사용 하기를 권장함
