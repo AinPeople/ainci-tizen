@@ -86,6 +86,11 @@ Tizen 이미지 관리 솔루션 연동 방법
 * 0.0.1
     * 안정화 작업 중
 
+## 신규 repository 계획
+ - git-server, docker-image 컨테이너 
+ - Docker 통합 모니터링 솔루션
+ - 독립서버, aws, gcp 기반에 대한 각각의 쿠버네티스 기능을 docker-compose로 개별 
+
 ## 멤버
 
 임도현 Owner S/W, H/W, 개발자/기획자
