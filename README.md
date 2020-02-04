@@ -93,7 +93,7 @@ Tizen 이미지 관리 솔루션 연동 방법
 
 ## 멤버
 
-임도현 Owner S/W, H/W, 개발자/기획자
+임도현 Owner S/W, H/W, 개발자/기획자 bluebamus@gmail.com
 
 임태연 Member 디자이너/마케터
 
