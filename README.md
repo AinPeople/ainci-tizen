@@ -14,7 +14,9 @@
 
 > Tizen 빌드 솔루션
 
-> * 통합 예정 솔루션
+
+
+* 통합 예정 솔루션
 
 > git server
 > docker-image server
