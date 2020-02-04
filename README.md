@@ -19,6 +19,7 @@
 * 통합 예정 솔루션
 
 > git server
+
 > docker-image server
 
 * DB는 데이터의 안정성을 위해 Docker로 제공하지 않으며 따로 설치하여 사용 하기를 권장함
