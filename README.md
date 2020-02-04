@@ -41,7 +41,7 @@
 
 > [Tizen-Builder-Env] : 설명 추가
 
-> 상위 솔루션은 compose/full_service 안의 docker-compose.yml 파일을 통해 
+> 상위 솔루션은 compose/full_service 안의 docker-compose.yml 파일을 실행하여 
   하나의 nginx 컨테이너를 통해 각각 다른 도메인으로 서비스를 연결할 수 있음
 
 ## 사용 방법 
