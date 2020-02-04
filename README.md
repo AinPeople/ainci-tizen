@@ -33,7 +33,9 @@ shell script
 ## 멤버
 
 임도현 Owner S/W, H/W, 개발자/기획자
+
 임태연 Member 디자이너/마케터
+
 강동훈 Member S/W, H/W, 개발자/연구원
 
 <!-- Markdown link & img dfn's -->
