@@ -79,7 +79,7 @@ Jenkins와 Tizen-Builder 구축 방법
 개발 중
 ```
 
-Tizen Web-Image management 구축 방법
+Tizen Image Web-management 구축 방법
 
 ```sh
 개발 중
