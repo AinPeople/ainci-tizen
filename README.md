@@ -39,35 +39,51 @@
       open.test.com으로 오픈프로젝트를 운영,
       jen.test.com으로 jenkins를 운영할 수 있음
 
-> [Tizen-Builder-Env] : 설명 추가
+> [Tizen-Builder-Env] : Tizen IoT 제품을 만들기 위한 개발 환경 구축
 
 > 상위 솔루션은 compose/full_service 안의 docker-compose.yml 파일을 실행하여 
   하나의 nginx 컨테이너로 각각 다른 도메인 서비스를 연결할 수 있음
 
-## 사용 방법 
+## 사용 방법 : Reference
 
 가상 호스팅 사용 방법 : [nginx-vhost-php7.3]
 
 OpenProject, Jenkins 사용 방법 : [nginx-vhost_php7.3_openproject_jenkins_docker-image]
 
-Tizen-Builder 구축 방법 
+Tizen-Builder 수동 구축 방법 
+
+https://source.tizen.org/documentation/developer-guide/all-one-instructions/creating-tizen-images-scratch-one-page
+
+Jenkins와 Tizen-Builder 수동 구축 방법 
+
+https://source.tizen.org/documentation/developer-guide/all-one-instructions/one-click-solution-tizen-image-creation-based-on-jenkins-framework
+
+
+## 사용 방법 : Docker를 이용한 Tizen 환경 구축
+
+Tizen-Builder Docker 구축 방법 : 우분투 16.04
 
 ```sh
-현재 테스트 중 / 2020.02.05 업데이트 예정
+개발 중
 ```
 
-Jenkins와 Tizen-Builder 연동 방법
+Tizen-Builder Docker 구축 방법 : 우분투 18.04
 
 ```sh
-현재 테스트 중 / 2020.02.05 업데이트 예정
+개발 중
 ```
 
-Tizen 이미지 관리 솔루션 연동 방법
+Jenkins와 Tizen-Builder 구축 방법
 
 ```sh
-현재 테스트 중 / 2020.02.05 업데이트 예정
+개발 중
 ```
 
+Tizen Web-Image management 구축 방법
+
+```sh
+개발 중
+```
 
 ## 사용 예제
 
@@ -105,4 +121,4 @@ Tizen 이미지 관리 솔루션 연동 방법
 [nginx-vhost_php7.3_openproject_jenkins_docker-image]: https://github.com/bluebamus/nginx-vhost_php7.3_openproject_jenkins_docker-image
 [OpenProject]: http://wiki.webnori.com/display/pms/Open+Project+7
 [Jenkins]: https://jjeongil.tistory.com/810
-[Tizen-Builder-Env]: https://github.com/ainpeople/ainci-tizen
+[Tizen-Builder-Env]: https://source.tizen.org/
