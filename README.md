@@ -72,8 +72,6 @@ https://source.tizen.org/documentation/developer-guide/all-one-instructions/one-
 ![AinCI-Tizen Build]
 
 
-###Jenkins와 Tizen-Builder 구축 방법
-
 #### AinCI-Tizen from source
 
 1. Clone the code from the AinCI-Tizen GitHub repository
