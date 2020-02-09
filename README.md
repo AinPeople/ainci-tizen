@@ -5,7 +5,7 @@
 
 ## 통합된 솔루션
 
-> nginx/php7.3 가상 호스팅, proxy 솔루션
+> nginx/php7.3 가상 호스팅, proxy 솔루션  
          - Tizen 이미지 관리 솔루션 지원
 
 > OpenProject 프로젝트 관리 솔루션
@@ -67,7 +67,7 @@ https://source.tizen.org/documentation/developer-guide/all-one-instructions/one-
          - [Tizen jenkins 기반 설치 공식 메뉴얼]  
          - 기본 설치는 우분투 16.04 기준 콘솔 설치를 기준으로 함  
   
->* 제공 되는 메뉴얼은 우분투 18.04 기준으로 Docker 기반 설치 방법을 제공함
+> * 제공 되는 메뉴얼은 우분투 18.04 기준으로 Docker 기반 설치 방법을 제공함
 
 ### Tizen-Builder Docker 구축 방법 : 우분투 18.04 & Jenkins slave 연동 설치
 
