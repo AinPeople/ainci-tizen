@@ -235,6 +235,11 @@ To contribute to AinCI-Tizen, please refer to [GitHub](https://github.com/ainpeo
 should includes most of the things you'll need to get your contribution started!
 
 <!-- Markdown link & img dfn's -->
+[Tizen ssh key 등록 저장소]: https://review.tizen.org/gerrit
+[ssh-config]: https://github.com/ainpeople/ainpeople_doc/blob/master/ainci-tizen/images/ssh_config.png
+[tizen-register-site]: https://github.com/ainpeople/ainpeople_doc/blob/master/ainci-tizen/images/tizen_ssh_register.png
+[ssh-config]: https://github.com/ainpeople/ainpeople_doc/blob/master/ainci-tizen/images/ssh_config.png
+[ssh-success-msg]: https://github.com/ainpeople/ainpeople_doc/blob/master/ainci-tizen/images/ssh_result.png
 [Tizen 수동 환경 설치 & 추가 정보 제공]: https://github.com/ainpeople/ainpeople_doc
 [Tizen 수동 환경 설치]: https://source.tizen.org/ko/documentation/developer-guide/getting-started-guide
 [Tizen image mng server]: https://github.com/ainpeople/ainpeople_doc/blob/master/ainci-tizen/images/sample_tizen.PNG
