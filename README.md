@@ -6,7 +6,7 @@
 ## 통합된 솔루션
 
 > nginx/php7.3 가상 호스팅, proxy 솔루션
->  - Tizen 이미지 관리 솔루션 지원
+         - Tizen 이미지 관리 솔루션 지원
 
 > OpenProject 프로젝트 관리 솔루션
 
