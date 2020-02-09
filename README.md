@@ -1,9 +1,7 @@
 # ainci-tizen
 > AinCI-Tizen creates Build, Test, and CI servers with Docker to automatically generate system images for porting to Tizen-based IoT devices. This provides a development server infrastructure for Tizen-based IoT devices.
 
-> AinCI-Tizen는 Tizen-based IoT 장비들을 포팅하기 위한 시스템 이미지를 자동으로 만들기 위해 필요한 빌드, 테스트, CI 환경을 서버에 docker를 사용하여 만들어준다.
-
-![AinCI-Tizen Build](https://github.com/ainpeople/ainpeople_doc/blob/master/ainci-tizen/images/AinCI-Tizen_build.jpg)
+> AinCI-Tizen는 Tizen-based IoT 장비들을 포팅하기 위한 시스템 이미지를 자동으로 만들기 위해 필요한 빌드, 테스트, CI 환경을 서버에 docker를 사용하여 만들어준다. 
 
 ## 통합된 솔루션
 
