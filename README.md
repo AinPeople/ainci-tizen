@@ -61,22 +61,49 @@ https://source.tizen.org/documentation/developer-guide/all-one-instructions/one-
 
 ## 사용 방법 : Docker를 이용한 Tizen 환경 구축
 
-Tizen-Builder Docker 구축 방법 : 우분투 16.04
+Tizen-Builder Docker 구축 방법 : 우분투 18.04 & Jenkins slave 연동 설치
 
-```sh
-개발 중
-```
+### How to build a Tizen image using AinCI-Tizen(새로운 방법)
 
-Tizen-Builder Docker 구축 방법 : 우분투 18.04
+![AinCI-Tizen Build](https://github.com/ainpeople/ainpeople_doc/blob/master/ainci-tizen/images/AinCI-Tizen_build.jpg)
 
-```sh
-개발 중
+#### Dependencies
+
+The following packages are required:
+
+* Ubuntu 18.04 LTS
+* Docker CE(Community Edition) 설치
+
+```shell
+sudo apt-get update
+sudo apt-get install apt-transport-https ca-certificates curl gnupg-agent software-properties-common
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+sudo apt-key fingerprint 0EBFCD88
+sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
+sudo apt-get update
+sudo apt-get install docker-ce docker-ce-cli containerd.io
 ```
 
 Jenkins와 Tizen-Builder 구축 방법
 
-```sh
-개발 중
+#### AinCI-Tizen from source
+
+1. Clone the code from the AinCI-Tizen GitHub repository
+```bash
+
+$ git clone https://github.com/ainpeople/ainci-tizen.git
+```
+
+2. 설정값 수정
+
+3. AinCI-Tizen 스크립트 실행
+```bash
+$ cd ainci-tizen/script
+$ ./ainci-tizen.sh
+```
+
+```bash
+$ ok [clean] [debug]
 ```
 
 Tizen Image Web-management 구축 방법
@@ -87,8 +114,25 @@ Tizen Image Web-management 구축 방법
 
 ## 사용 예제
 
-스크린 샷과 코드 예제를 통해 사용 방법을 자세히 설명합니다.
-- 업데이트 예정
+#### Interacting with AinCI-Tzien
+
+To access Download web server, use a browser to open:
+
+[http://localhost:8080](http://localhost:8080)
+
+### Contributing
+
+AinCI-Tizen code is hosted and maintained using [GitHub](https://github.com/ainpeople/ainci-tizen).
+
+To contribute to AinCI-Tizen, please refer to [GitHub](https://github.com/ainpeople/ainci-tizen). It
+should includes most of the things you'll need to get your contribution started!
+
+### More information
+
+For more information, please check out a Tizen documentation page:
+
+* [Tizen documentation](https://source.tizen.org/documentation)
+
 
 ## 개발 환경 설정
 
