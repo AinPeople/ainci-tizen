@@ -81,9 +81,9 @@ https://source.tizen.org/documentation/developer-guide/all-one-instructions/one-
 ![GBS Build](https://github.com/ainpeople/ainpeople_doc/blob/master/ainci-tizen/images/GBS_build.jpg)
 
 
-> 타이젠에서 제공하는 수동 설치 방법 : [Tizen 수동 환경 설치]
+* 타이젠에서 제공하는 수동 설치 방법 : [Tizen 수동 환경 설치]
 
-> 타이젠 공식 홈에서 제공하는 정보가 부족한 부분이 있으므로 자체적으로 캡쳐 및 추가 정보 제공 : [Tizen 수동 환경 설치 & 추가 정보 제공]
+* 타이젠 공식 홈에서 제공하는 정보가 부족한 부분이 있으므로 자체적으로 캡쳐 및 추가 정보 제공 : [Tizen 수동 환경 설치 & 추가 정보 제공]
 
 
 ### Docker를 이용한 설치 방법
