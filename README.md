@@ -74,31 +74,95 @@ https://source.tizen.org/documentation/developer-guide/all-one-instructions/one-
 ![AinCI-Tizen Build]
 
 
-#### AinCI-Tizen from source
+### 수동 설치 방법
 
-1. Clone the code from the AinCI-Tizen GitHub repository
-```bash
+> 타이젠에서 제공하는 수동 설치 방법 : [Tizen 수동 환경 설치]
 
-$ git clone https://github.com/ainpeople/ainci-tizen.git
+> 타이젠 공식 홈에서 제공하는 정보가 부족한 부분이 있으므로 자체적으로 캡쳐 및 추가 정보 제공 : [Tizen 수동 환경 설치 & 추가 정보 제공]
+
+
+### Docker를 이용한 설치 방법
+
+###### docker/tizen-env/.ssh 폴더에 RSA keys 생성
+
+* Generate RSA keys
+
+```shell
+ssh-keygen [-t rsa] [-b 4096 ] [-C "<Comments>"]
 ```
 
-2. 설정값 수정
+* .ssh 폴더에 config 생성
 
-3. AinCI-Tizen 스크립트 실행
-```bash
-$ cd ainci-tizen/script
-$ ./ainci-tizen.sh
+```shell
+Host tizen review.tizen.org
+Hostname review.tizen.org
+IdentityFile ~/.ssh/id_rsa
+User <Gerrit_Username>
+Port 29418
+# Add the line below when using proxy, otherwise, skip it.
+# ProxyCommand nc -X5 -x <Proxy Address>:<Port> %h %p
+
+Note:
+Both "tizen" and "review.tizen.org" are aliases of the hostname. "tizen" is configured for simplicity of commands when initializing git repositories and cloning specific Tizen projects, and "review.tizen.org" is configured to work with the manifest.xml and _remote.xml files when synchronizing the entire Tizen source.
+The ~/.ssh/config file must not be written in by other users. Make sure to remove the write permission by executing chmod o-w ~/.ssh/config. For more information on ssh_config, see man ssh_config.
 ```
 
-```bash
-$ ok [clean] [debug]
+* ssh config 생성 예시 이미지
+![ssh-config]
+
+***
+
+* ssh 등록 url : [Tizen ssh key 등록 저장소] 에 등록 (사전 타이젠 공식 계정 생성 필요)
+
+In the Gerrit Web page, click the user name on the top right corner (with an inverted triangle on the right), and select Settings to display the Settings Web page.
+Click SSH Public Keys in the left panel, paste the text copied earlier into the Add SSH Public Key box, and click Add.
+
+Log in to Tizen Gerrit(https://review.tizen.org/gerrit) and upload the key
+
+***
+
+> ### 타이젠 이미지 저장소 예시 이미지
+![tizen-register-site]
+
+***
+
+> ### 성공적으로 등록시 ssh tizen 입력 후 확인 가능한 예시 이미지
+![ssh-success-msg]
+
+***
+
+* Configuring Git for Gerrit Access
+
+docker/tizen-env/Dockerfile의 다음 항목을 변경
+
+```shell
+git config --global user.name <First_Name Last_Name>
+git config --global user.email "<E-mail_Address>"
+
+상위 항목 중 First_Name Last_Name 부분과 E-mail_Address 부분을 변경해줘야 함
+known_hosts 파일 그대로 유지
 ```
 
-Tizen Image Web-management 구축 방법
+***
+
+> Setting Up the Repo Tool과 빌드 도구(GBS, MIC) 설치는 Docker로 자동 설치됨
+
+* Docker-compose로 tizen 환경만 구축하는 방법
 
 ```sh
-개발 중
+compose\tizen-jenkins 폴더 이동
+docker-compose up -d 실행
 ```
+
+* Docker-compose로 통합 환경 전체를 구축하는 방법
+
+```sh
+compose\full_service 폴더 이동
+docker-compose up -d 실행
+```
+
+* 실행된 docker 컨테이너에 접속하는 방법
+
 
 ## Tizen 공식 사이트 및 문서
 
@@ -145,7 +209,7 @@ sudo apt-get install docker-ce docker-ce-cli containerd.io
 ```
 
 
-## 업데이트 내역
+## 업데이트 내역 
 
 * 0.0.1
     * 안정화 작업 중
@@ -171,6 +235,8 @@ To contribute to AinCI-Tizen, please refer to [GitHub](https://github.com/ainpeo
 should includes most of the things you'll need to get your contribution started!
 
 <!-- Markdown link & img dfn's -->
+[Tizen 수동 환경 설치 & 추가 정보 제공]: https://github.com/ainpeople/ainpeople_doc
+[Tizen 수동 환경 설치]: https://source.tizen.org/ko/documentation/developer-guide/getting-started-guide
 [Tizen image mng server]: https://github.com/ainpeople/ainpeople_doc/blob/master/ainci-tizen/images/sample_tizen.PNG
 [AinCI-Tizen Build]: https://github.com/ainpeople/ainpeople_doc/blob/master/ainci-tizen/images/AinCI-Tizen_build.jpg
 [Tizen jenkins 기반 설치 공식 메뉴얼]: https://source.tizen.org/ko/documentation/developer-guide/all-one-instructions/one-click-solution-tizen-image-creation-based-on-jenkins-framework
