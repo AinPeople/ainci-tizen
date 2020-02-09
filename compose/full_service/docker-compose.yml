@@ -57,3 +57,12 @@ services:
       - ./jenkins_home:/var/jenkins_home
     environment:
       TZ: "Asia/Seoul"
+      
+  tizenenv:
+    build: ../../docker/tizen-env/
+    container_name: tizenenv
+    restart: always
+    ports:
+        - "2222:22"
+    environment:
+         TZ: "Asia/Seoul"      
