@@ -74,7 +74,7 @@ https://source.tizen.org/documentation/developer-guide/all-one-instructions/one-
 ![AinCI-Tizen Build]
 
 
-### 수동 설치 방법
+### 콘솔에서 직접 수동 설치 방법
 
 > 타이젠에서 제공하는 수동 설치 방법 : [Tizen 수동 환경 설치]
 
@@ -163,7 +163,25 @@ compose\full_service 폴더 이동
 docker-compose up -d 실행
 ```
 
-* 실행된 docker 컨테이너에 접속하는 방법
+* 실행된 Docker 컨테이너에 접속하는 방법
+
+```sh
+docker exec -it tizenenv bash
+```
+
+* Docker 이미지를 다시 빌드 하는 경우(전체 컨테이너 및 이미지 삭제)
+
+```sh
+docker stop $(docker ps -a -q)
+docker rm $(docker ps -a -q)
+docker rmi $(docker images -a -q)
+docker prune network
+```
+
+### Tizen 환경 구축을 위한 Docker 자동화 추가 개발 현황
+* Tizen 기본 이미지를 공식 페이지에서 다운받아 빌드 및 이미지 생성 (sample) -2월 중
+* jenkins master / slave 구축 및 빌드 연동 -2월 중
+* git server / github와 jenkins와 연동하여 빌드 연동 -2월 중
 
 
 ## Tizen 공식 사이트 및 문서
