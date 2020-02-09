@@ -111,11 +111,11 @@ For more information, please check out a Tizen documentation page :
 
 ## 사용 예제
 
-#### Interacting with AinCI-Tzien
+http://localhost 실행시 다음 화면을 통해 타이젠 이미지를 관리할 수 있음
 
-To access Download web server, use a browser to open:
+![Tizen image mng server]
 
-[http://localhost:8080](http://localhost:8080)
+* 해당 솔루션은 차후 추가될 예정
 
 
 ## 개발 환경 설정
@@ -143,9 +143,6 @@ sudo apt-get install docker-ce docker-ce-cli containerd.io
 ```
 
 
-
-
-
 ## 업데이트 내역
 
 * 0.0.1
@@ -154,7 +151,7 @@ sudo apt-get install docker-ce docker-ce-cli containerd.io
 ## 신규 repository 계획
  - git-server, docker-image 컨테이너 
  - Docker 통합 모니터링 솔루션
- - 독립서버, aws, gcp 기반에 대한 각각의 쿠버네티스 기능을 docker-compose로 개별 
+ - 독립서버, aws, gcp 기반에 대한 각각의 쿠버네티스 기능을 docker-compose로 개별 관리
 
 ## 멤버
 
@@ -172,6 +169,7 @@ To contribute to AinCI-Tizen, please refer to [GitHub](https://github.com/ainpeo
 should includes most of the things you'll need to get your contribution started!
 
 <!-- Markdown link & img dfn's -->
+[Tizen image mng server]: https://github.com/ainpeople/ainpeople_doc/blob/master/ainci-tizen/images/sample_tizen.PNG
 [AinCI-Tizen Build]: https://github.com/ainpeople/ainpeople_doc/blob/master/ainci-tizen/images/AinCI-Tizen_build.jpg
 [Tizen jenkins 기반 설치 공식 메뉴얼]: https://source.tizen.org/ko/documentation/developer-guide/all-one-instructions/one-click-solution-tizen-image-creation-based-on-jenkins-framework
 [Tizen documentation]: https://source.tizen.org/documentation
