@@ -101,6 +101,7 @@ ssh-keygen [-t rsa] [-b 4096 ] [-C "<Comments>"]
 ```
 
 * .ssh 폴더에 config 생성
+>User <Gerrit_Username> 위치에 타이젠 공식 홈페이지에 가입된 계정 정보를 
 
 ```shell
 Host tizen review.tizen.org
