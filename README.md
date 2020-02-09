@@ -61,30 +61,17 @@ https://source.tizen.org/documentation/developer-guide/all-one-instructions/one-
 
 ## 사용 방법 : Docker를 이용한 Tizen 환경 구축
 
-Tizen-Builder Docker 구축 방법 : 우분투 18.04 & Jenkins slave 연동 설치
+> * 해당 설치 방법은 Tizen 공식 메뉴얼을 참고하여 생성됨
+>  - 기본 설치는 우분투 16.04 기준 콘솔 설치를 기준으로 함
+  
+>* 제공 되는 메뉴얼은 우분투 18.04 기준으로 Docker 기반 설치 방법을 제공함
 
-### How to build a Tizen image using AinCI-Tizen(새로운 방법)
+### Tizen-Builder Docker 구축 방법 : 우분투 18.04 & Jenkins slave 연동 설치
 
-![AinCI-Tizen Build](https://github.com/ainpeople/ainpeople_doc/blob/master/ainci-tizen/images/AinCI-Tizen_build.jpg)
+![AinCI-Tizen Build]
 
-#### Dependencies
 
-The following packages are required:
-
-* Ubuntu 18.04 LTS
-* Docker CE(Community Edition) 설치
-
-```shell
-sudo apt-get update
-sudo apt-get install apt-transport-https ca-certificates curl gnupg-agent software-properties-common
-curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
-sudo apt-key fingerprint 0EBFCD88
-sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
-sudo apt-get update
-sudo apt-get install docker-ce docker-ce-cli containerd.io
-```
-
-Jenkins와 Tizen-Builder 구축 방법
+###Jenkins와 Tizen-Builder 구축 방법
 
 #### AinCI-Tizen from source
 
@@ -112,6 +99,17 @@ Tizen Image Web-management 구축 방법
 개발 중
 ```
 
+## Tizen 공식 사이트 및 문서
+
+Tizen 공식 사이트 :
+
+* [Tizen 공식 사이트]
+
+For more information, please check out a Tizen documentation page :
+
+* [Tizen documentation]
+
+
 ## 사용 예제
 
 #### Interacting with AinCI-Tzien
@@ -120,19 +118,6 @@ To access Download web server, use a browser to open:
 
 [http://localhost:8080](http://localhost:8080)
 
-### Contributing
-
-AinCI-Tizen code is hosted and maintained using [GitHub](https://github.com/ainpeople/ainci-tizen).
-
-To contribute to AinCI-Tizen, please refer to [GitHub](https://github.com/ainpeople/ainci-tizen). It
-should includes most of the things you'll need to get your contribution started!
-
-### More information
-
-For more information, please check out a Tizen documentation page:
-
-* [Tizen documentation](https://source.tizen.org/documentation)
-
 
 ## 개발 환경 설정
 
@@ -140,6 +125,27 @@ For more information, please check out a Tizen documentation page:
 
 > docker 설치 참고 사이트 [docker-install]  
 > docker-compose는 apt-get을 통해 설치가 가능한 것으로 확인됨
+
+### * 수동 설치 요약 메뉴얼
+
+The following packages are required:
+
+* Ubuntu 18.04 LTS
+* Docker CE(Community Edition) 설치
+
+```shell
+sudo apt-get update
+sudo apt-get install apt-transport-https ca-certificates curl gnupg-agent software-properties-common
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+sudo apt-key fingerprint 0EBFCD88
+sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
+sudo apt-get update
+sudo apt-get install docker-ce docker-ce-cli containerd.io
+```
+
+
+
+
 
 ## 업데이트 내역
 
@@ -159,7 +165,18 @@ For more information, please check out a Tizen documentation page:
 
 강동훈 Member S/W, H/W, 개발자/연구원
 
+## How to Contributing our project
+
+AinCI-Tizen code is hosted and maintained using [GitHub](https://github.com/ainpeople/ainci-tizen).
+
+To contribute to AinCI-Tizen, please refer to [GitHub](https://github.com/ainpeople/ainci-tizen). It
+should includes most of the things you'll need to get your contribution started!
+
 <!-- Markdown link & img dfn's -->
+[AinCI-Tizen Build]: https://github.com/ainpeople/ainpeople_doc/blob/master/ainci-tizen/images/AinCI-Tizen_build.jpg
+[Tizen jenkins 기반 설치 공식 메뉴얼]: https://source.tizen.org/ko/documentation/developer-guide/all-one-instructions/one-click-solution-tizen-image-creation-based-on-jenkins-framework
+[Tizen documentation]: https://source.tizen.org/documentation
+[Tizen 공식 사이트]: https://www.tizen.org/ko?langswitch=ko
 [docker-install]: https://hcnam.tistory.com/25 
 [nginx-vhost-php7.3]: https://github.com/bluebamus/nginx-vhost-php7.3
 [nginx-vhost_php7.3_openproject_jenkins_docker-image]: https://github.com/bluebamus/nginx-vhost_php7.3_openproject_jenkins_docker-image
