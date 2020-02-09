@@ -22,6 +22,8 @@
 
 > docker-image server
 
+> AWS, GCP 기반 Docker / Docker-compose 
+
 * DB는 데이터의 안정성을 위해 Docker로 제공하지 않으며 따로 설치하여 사용 하기를 권장함
 * Tizen 이미지 관리 솔루션은 3306 포트가 local과 포트포워딩 되어 있으므로 이를 통해 외부 서버와 연동 가능함
 
