@@ -39,6 +39,9 @@ AinCI-Tizen creates Build, Test, and CI servers with Docker to automatically gen
 * GBS(Tizen Build Server) 구축 방법 : https://source.tizen.org/documentation/developer-guide/all-one-instructions/creating-tizen-images-scratch-one-page
 * GBS(Tizen Build Server)와 Jenkins(CI) 연동 방법 : https://source.tizen.org/documentation/developer-guide/all-one-instructions/one-click-solution-tizen-image-creation-based-on-jenkins-framework
 
+### How to build a Tizen image without using AinCI-Tizen(기존 방법)
+https://github.com/ainpeople/ainpeople_doc/blob/master/README.md
+
 ### Third-party Development Infrastructure
 ![AinCI-Tizen Build]
 
