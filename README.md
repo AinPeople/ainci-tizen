@@ -221,15 +221,17 @@ $ docker prune network
 
 ### 주요 멤버
 
-* 임도현 Owner S/W, H/W, 개발자/기획자 bluebamus@gmail.com
-* 임태연 Member 디자이너/마케터
-* 강동훈 Member S/W, H/W, 개발자/연구원
+* 임도현 Owner Tizen Specialist(심사중), bluebamus@gmail.com
+* 임태연 Member Tizen Developer
+* 강동훈 Member Tizen Developer
 
 ### How to contributing our project
 
-* AinCI-Tizen code is hosted and maintained using [GitHub](https://github.com/ainpeople/ainci-tizen).
+* AinCI-Tizen code is hosted and maintained using [GitHub](https://github.com/ainpeople/ainci-tizen). 
+We plan to contribute to third-party tools in the Tizen official repository(https://review.tizen.org/git/).
 * To contribute to AinCI-Tizen, please refer to [GitHub](https://github.com/ainpeople/ainci-tizen). It
 should includes most of the things you'll need to get your contribution started!
+
 
 <!-- Markdown link & img dfn's -->
 [Tizen ssh key 등록 저장소]: https://review.tizen.org/gerrit
