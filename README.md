@@ -221,9 +221,9 @@ $ docker prune network
 
 ### 주요 멤버
 
-* 임도현 Owner Tizen Specialist(심사중), bluebamus@gmail.com
-* 임태연 Member Tizen Developer
-* 강동훈 Member Tizen Developer
+* 임도현 Owner, Tizen Specialist(심사중), bluebamus@gmail.com
+* 임태연 Member, Tizen Developer
+* 강동훈 Member, Tizen Developer
 
 ### How to contributing our project
 
